@@ -1938,13 +1938,12 @@ html {
 /* line 14, ../sass/_cyklotury.scss */
 body {
   font-family: "Roboto", sans-serif;
-  font-kerning: 15px;
   line-height: 150%;
   background-color: #ecf0f1;
   text-align: justify;
 }
 
-/* line 27, ../sass/_cyklotury.scss */
+/* line 26, ../sass/_cyklotury.scss */
 h1,
 h2,
 h3,
@@ -1957,7 +1956,7 @@ h6 {
   line-height: 130%;
   text-align: left;
 }
-/* line 33, ../sass/_cyklotury.scss */
+/* line 32, ../sass/_cyklotury.scss */
 h1 a,
 h2 a,
 h3 a,
@@ -2014,40 +2013,67 @@ h6 a:hover {
   text-decoration: underline;
 }
 
-/* line 40, ../sass/_cyklotury.scss */
+/* line 39, ../sass/_cyklotury.scss */
 h3 {
   display: block;
   width: 50%;
   padding-bottom: 5px;
   border-bottom: solid 1px #bdc3c7;
 }
-
-/* line 48, ../sass/_cyklotury.scss */
-h4 {
-  margin-bottom: 0px;
-  font-weight: bold;
+@media screen and (max-width: 480px) {
+  /* line 39, ../sass/_cyklotury.scss */
+  h3 {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+    width: 100%;
+  }
+  /* line 344, ../sass/jeet/_grid.scss */
+  h3:before, h3:after {
+    content: '';
+    display: table;
+  }
+  /* line 349, ../sass/jeet/_grid.scss */
+  h3:after {
+    clear: both;
+  }
+  /* line 58, ../sass/jeet/_grid.scss */
+  h3:last-child {
+    margin-right: 0%;
+  }
 }
 
 /* line 53, ../sass/_cyklotury.scss */
+h4 {
+  margin-bottom: 0px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* line 59, ../sass/_cyklotury.scss */
 p {
   font-family: "Roboto", sans-serif;
   text-align: left;
   margin-top: 2px;
 }
 
-/* line 59, ../sass/_cyklotury.scss */
+/* line 65, ../sass/_cyklotury.scss */
 .edit {
   font-size: 0.6em;
   display: none;
 }
 
-/* line 64, ../sass/_cyklotury.scss */
+/* line 70, ../sass/_cyklotury.scss */
 .delete {
   font-size: 0.6em;
   display: none;
 }
 
-/* line 69, ../sass/_cyklotury.scss */
+/* line 75, ../sass/_cyklotury.scss */
 .pager {
   background-color: white;
   -webkit-border-radius: 5px;
@@ -2058,7 +2084,7 @@ p {
   color: black;
 }
 
-/* line 75, ../sass/_cyklotury.scss */
+/* line 81, ../sass/_cyklotury.scss */
 .links {
   clear: both;
   font-size: .8em;
@@ -2075,7 +2101,7 @@ p {
   background-color: #bdc3c7;
   color: white;
 }
-/* line 91, ../sass/_cyklotury.scss */
+/* line 97, ../sass/_cyklotury.scss */
 .links a {
   color: black;
   text-decoration: none;
@@ -2100,12 +2126,47 @@ p {
 .links a:hover {
   text-decoration: underline;
 }
+@media screen and (max-width: 480px) {
+  /* line 81, ../sass/_cyklotury.scss */
+  .links {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+    text-align: center;
+  }
+  /* line 344, ../sass/jeet/_grid.scss */
+  .links:before, .links:after {
+    content: '';
+    display: table;
+  }
+  /* line 349, ../sass/jeet/_grid.scss */
+  .links:after {
+    clear: both;
+  }
+  /* line 58, ../sass/jeet/_grid.scss */
+  .links:last-child {
+    margin-right: 0%;
+  }
+}
+
+/* line 107, ../sass/_cyklotury.scss */
+.action-links {
+  padding: 10px 20px 10px 25px;
+}
+/* line 109, ../sass/_cyklotury.scss */
+.action-links li {
+  list-style: none;
+}
 
 /*
  *  * {
     border: 1px dashed #0000FF;
 } */
-/* line 107, ../sass/_cyklotury.scss */
+/* line 124, ../sass/_cyklotury.scss */
 #page {
   *zoom: 1;
   width: auto;
@@ -2127,7 +2188,33 @@ p {
   clear: both;
 }
 
-/* line 114, ../sass/_cyklotury.scss */
+/* line 129, ../sass/_cyklotury.scss */
+#content table {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: #bdc3c7 5px 5px 2px;
+  -moz-box-shadow: #bdc3c7 5px 5px 2px;
+  box-shadow: #bdc3c7 5px 5px 2px;
+  background-color: white;
+  padding: 20px;
+}
+/* line 137, ../sass/_cyklotury.scss */
+#content table th {
+  padding: 5px 15px 5px 15px;
+}
+/* line 141, ../sass/_cyklotury.scss */
+#content table td {
+  padding: 5px 15px 5px 15px;
+  text-align: left;
+}
+
+/* line 150, ../sass/_cyklotury.scss */
 .header {
   position: relative;
   -webkit-border-radius: 5px;
@@ -2139,7 +2226,7 @@ p {
   max-width: 100%;
   min-height: 300px;
 }
-/* line 120, ../sass/_cyklotury.scss */
+/* line 156, ../sass/_cyklotury.scss */
 .header .zahlavi-img {
   position: relative;
   top: -25px;
@@ -2183,7 +2270,7 @@ p {
   margin-right: 0%;
 }
 @media screen and (max-width: 480px) {
-  /* line 120, ../sass/_cyklotury.scss */
+  /* line 156, ../sass/_cyklotury.scss */
   .header .zahlavi-img {
     *zoom: 1;
     float: left;
@@ -2192,8 +2279,7 @@ p {
     width: 100%;
     margin-left: 0%;
     margin-right: 3%;
-    position: static;
-    margin: 15px 0px 15px 0px;
+    display: none;
   }
   /* line 344, ../sass/jeet/_grid.scss */
   .header .zahlavi-img:before, .header .zahlavi-img:after {
@@ -2209,7 +2295,7 @@ p {
     margin-right: 0%;
   }
 }
-/* line 140, ../sass/_cyklotury.scss */
+/* line 175, ../sass/_cyklotury.scss */
 .header .bily-pruh {
   position: absolute;
   background-color: white;
@@ -2218,13 +2304,39 @@ p {
   bottom: 0;
   left: 0;
 }
+@media screen and (max-width: 480px) {
+  /* line 175, ../sass/_cyklotury.scss */
+  .header .bily-pruh {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+    display: none;
+  }
+  /* line 344, ../sass/jeet/_grid.scss */
+  .header .bily-pruh:before, .header .bily-pruh:after {
+    content: '';
+    display: table;
+  }
+  /* line 349, ../sass/jeet/_grid.scss */
+  .header .bily-pruh:after {
+    clear: both;
+  }
+  /* line 58, ../sass/jeet/_grid.scss */
+  .header .bily-pruh:last-child {
+    margin-right: 0%;
+  }
+}
 
-/* line 151, ../sass/_cyklotury.scss */
+/* line 190, ../sass/_cyklotury.scss */
 #main {
   position: relative;
 }
 
-/* line 159, ../sass/_cyklotury.scss */
+/* line 198, ../sass/_cyklotury.scss */
 .node {
   font-family: "Roboto", sans-serif;
   margin-bottom: 10px;
@@ -2239,24 +2351,79 @@ p {
   background-color: white;
   padding: 20px;
 }
-/* line 161, ../sass/_cyklotury.scss */
+/* line 199, ../sass/_cyklotury.scss */
 .node img {
-  box-sizing: border-box;
   display: block;
   width: 100%;
   height: auto;
 }
-/* line 174, ../sass/_cyklotury.scss */
+@media screen and (max-width: 480px) {
+  /* line 199, ../sass/_cyklotury.scss */
+  .node img {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+    display: block;
+    width: 100% !important;
+    height: auto;
+    margin: 20px 0 20px 0;
+  }
+  /* line 344, ../sass/jeet/_grid.scss */
+  .node img:before, .node img:after {
+    content: '';
+    display: table;
+  }
+  /* line 349, ../sass/jeet/_grid.scss */
+  .node img:after {
+    clear: both;
+  }
+  /* line 58, ../sass/jeet/_grid.scss */
+  .node img:last-child {
+    margin-right: 0%;
+  }
+}
+/* line 216, ../sass/_cyklotury.scss */
 .node h2 {
   font-size: 2em;
 }
 
-/* line 188, ../sass/_cyklotury.scss */
+/* line 228, ../sass/_cyklotury.scss */
+.contact-form,
+.node-form {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: #bdc3c7 5px 5px 2px;
+  -moz-box-shadow: #bdc3c7 5px 5px 2px;
+  box-shadow: #bdc3c7 5px 5px 2px;
+  background-color: white;
+  padding: 20px;
+}
+
+/* line 237, ../sass/_cyklotury.scss */
+.form-actions {
+  text-align: center;
+}
+
+/* line 241, ../sass/_cyklotury.scss */
+.form-submit {
+  margin: 5px 15px 5px 15px;
+}
+
+/* line 245, ../sass/_cyklotury.scss */
 .node__title {
   margin-bottom: 10px;
 }
 
-/* line 192, ../sass/_cyklotury.scss */
+/* line 249, ../sass/_cyklotury.scss */
 .page__title {
   display: block;
   position: relative;
@@ -2275,12 +2442,12 @@ p {
   padding: 0;
   margin-bottom: 15px;
 }
-/* line 204, ../sass/_cyklotury.scss */
+/* line 261, ../sass/_cyklotury.scss */
 .page__title h1 {
   margin: 0;
   padding: 20px;
 }
-/* line 209, ../sass/_cyklotury.scss */
+/* line 266, ../sass/_cyklotury.scss */
 .page__title .page-title-pruh {
   position: absolute;
   height: 8px;
@@ -2290,28 +2457,28 @@ p {
   left: 0;
 }
 
-/* line 221, ../sass/_cyklotury.scss */
+/* line 278, ../sass/_cyklotury.scss */
 .field-item h3 {
   font-size: 1.5em;
 }
-/* line 225, ../sass/_cyklotury.scss */
+/* line 282, ../sass/_cyklotury.scss */
 .field-item h4 {
   font-weight: bold;
 }
-/* line 229, ../sass/_cyklotury.scss */
+/* line 286, ../sass/_cyklotury.scss */
 .field-item p {
   margin: 0px;
 }
-/* line 233, ../sass/_cyklotury.scss */
+/* line 290, ../sass/_cyklotury.scss */
 .field-item p:first-child {
   margin-top: 1em;
 }
-/* line 237, ../sass/_cyklotury.scss */
+/* line 294, ../sass/_cyklotury.scss */
 .field-item p:last-child {
   margin-bottom: 1em;
 }
 
-/* line 242, ../sass/_cyklotury.scss */
+/* line 299, ../sass/_cyklotury.scss */
 .field-type-image {
   object-fit: cover;
   float: left;
@@ -2326,7 +2493,7 @@ p {
   display: block;
 }
 @media screen and (max-width: 480px) {
-  /* line 242, ../sass/_cyklotury.scss */
+  /* line 299, ../sass/_cyklotury.scss */
   .field-type-image {
     *zoom: 1;
     float: left;
@@ -2353,12 +2520,12 @@ p {
   }
 }
 
-/* line 269, ../sass/_cyklotury.scss */
+/* line 326, ../sass/_cyklotury.scss */
 figure .image {
   margin-bottom: 0px;
 }
 
-/* line 274, ../sass/_cyklotury.scss */
+/* line 331, ../sass/_cyklotury.scss */
 figcaption {
   display: block;
   background-color: #bdc3c7;
@@ -2368,7 +2535,7 @@ figcaption {
   padding: 1em;
 }
 
-/* line 287, ../sass/_cyklotury.scss */
+/* line 344, ../sass/_cyklotury.scss */
 .two-sidebars .region-sidebar-first {
   position: static;
   top: 35px;
@@ -2384,7 +2551,7 @@ figcaption {
   padding-top: 25px;
 }
 @media screen and (max-width: 480px) {
-  /* line 287, ../sass/_cyklotury.scss */
+  /* line 344, ../sass/_cyklotury.scss */
   .two-sidebars .region-sidebar-first {
     *zoom: 1;
     float: left;
@@ -2409,7 +2576,7 @@ figcaption {
     margin-right: 0%;
   }
 }
-/* line 299, ../sass/_cyklotury.scss */
+/* line 356, ../sass/_cyklotury.scss */
 .two-sidebars .region-sidebar-second {
   position: static;
   top: 35px;
@@ -2425,7 +2592,7 @@ figcaption {
   padding-top: 25px;
 }
 @media screen and (max-width: 480px) {
-  /* line 299, ../sass/_cyklotury.scss */
+  /* line 356, ../sass/_cyklotury.scss */
   .two-sidebars .region-sidebar-second {
     *zoom: 1;
     float: left;
@@ -2452,7 +2619,7 @@ figcaption {
   }
 }
 
-/* line 316, ../sass/_cyklotury.scss */
+/* line 373, ../sass/_cyklotury.scss */
 .comment-form {
   position: static;
   top: 5px;
@@ -2468,16 +2635,16 @@ figcaption {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 327, ../sass/_cyklotury.scss */
+/* line 384, ../sass/_cyklotury.scss */
 .comment-form .form-submit {
   margin: 15px;
 }
-/* line 330, ../sass/_cyklotury.scss */
+/* line 387, ../sass/_cyklotury.scss */
 .comment-form .filter-wrapper {
   display: none;
 }
 
-/* line 335, ../sass/_cyklotury.scss */
+/* line 392, ../sass/_cyklotury.scss */
 .comment-wrapper {
   position: static;
   top: 10px;
@@ -2494,22 +2661,22 @@ figcaption {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 346, ../sass/_cyklotury.scss */
+/* line 403, ../sass/_cyklotury.scss */
 .comment-wrapper .title {
   border: none;
   margin: none;
   padding: 15px;
 }
-/* line 351, ../sass/_cyklotury.scss */
+/* line 408, ../sass/_cyklotury.scss */
 .comment-wrapper .form-submit {
   margin: 15px;
 }
-/* line 354, ../sass/_cyklotury.scss */
+/* line 411, ../sass/_cyklotury.scss */
 .comment-wrapper .filter-wrapper {
   display: none;
 }
 
-/* line 359, ../sass/_cyklotury.scss */
+/* line 416, ../sass/_cyklotury.scss */
 .comment-by-node-author {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -2518,7 +2685,7 @@ figcaption {
   padding: 15px;
   background-color: #e2d8ff;
 }
-/* line 366, ../sass/_cyklotury.scss */
+/* line 423, ../sass/_cyklotury.scss */
 .comment-by-node-author .comment-title {
   color: white;
   background-color: black;
@@ -2529,7 +2696,7 @@ figcaption {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 371, ../sass/_cyklotury.scss */
+/* line 428, ../sass/_cyklotury.scss */
 .comment-by-node-author .comment-title a {
   color: white;
   text-decoration: none;
@@ -2557,7 +2724,7 @@ figcaption {
   text-decoration: underline;
 }
 
-/* line 380, ../sass/_cyklotury.scss */
+/* line 437, ../sass/_cyklotury.scss */
 .comment-by-viewer {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -2569,7 +2736,7 @@ figcaption {
     text-align: center;
 } */
 }
-/* line 387, ../sass/_cyklotury.scss */
+/* line 444, ../sass/_cyklotury.scss */
 .comment-by-viewer .comment-title {
   color: white;
   background-color: black;
@@ -2580,7 +2747,7 @@ figcaption {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 392, ../sass/_cyklotury.scss */
+/* line 449, ../sass/_cyklotury.scss */
 .comment-by-viewer .comment-title a {
   color: white;
   text-decoration: none;
@@ -2608,23 +2775,23 @@ figcaption {
   text-decoration: underline;
 }
 
-/* line 418, ../sass/_cyklotury.scss */
+/* line 475, ../sass/_cyklotury.scss */
 .region-page-top {
   background-color: none;
 }
 
-/* line 438, ../sass/_cyklotury.scss */
+/* line 495, ../sass/_cyklotury.scss */
 #block-system-main-menu {
   margin-bottom: 2px;
 }
 
-/* line 442, ../sass/_cyklotury.scss */
+/* line 499, ../sass/_cyklotury.scss */
 .block__title {
   font-size: 1.3em;
   margin-bottom: none;
 }
 
-/* line 448, ../sass/_cyklotury.scss */
+/* line 505, ../sass/_cyklotury.scss */
 a {
   color: black;
   text-decoration: none;
@@ -2651,12 +2818,13 @@ a:hover {
   text-decoration: underline;
 }
 
-/* line 459, ../sass/_cyklotury.scss */
+/* line 516, ../sass/_cyklotury.scss */
 .menu li .menu__item {
   margin-top: 0px;
   margin-bottom: 0px;
+  padding: 3px 8px 3px 8px;
 }
-/* line 464, ../sass/_cyklotury.scss */
+/* line 522, ../sass/_cyklotury.scss */
 .menu a {
   color: white;
   text-decoration: none;
@@ -2682,19 +2850,19 @@ a:hover {
   text-decoration: underline;
 }
 
-/* line 470, ../sass/_cyklotury.scss */
+/* line 528, ../sass/_cyklotury.scss */
 .menu a.active {
   color: #e74c3c;
 }
 
-/* line 476, ../sass/_cyklotury.scss */
+/* line 534, ../sass/_cyklotury.scss */
 .menu,
 ol,
 ul {
   padding: 0 0 0 0;
 }
 
-/* line 480, ../sass/_cyklotury.scss */
+/* line 538, ../sass/_cyklotury.scss */
 .menu__item {
   list-style-type: none;
   display: block;
@@ -2711,7 +2879,7 @@ ul {
   text-align: left;
 }
 
-/* line 492, ../sass/_cyklotury.scss */
+/* line 550, ../sass/_cyklotury.scss */
 .prouzek {
   *zoom: 1;
   float: left;
@@ -2748,7 +2916,7 @@ ul {
   margin-right: 0%;
 }
 
-/* line 506, ../sass/_cyklotury.scss */
+/* line 564, ../sass/_cyklotury.scss */
 .logo-kombi {
   *zoom: 1;
   float: left;
@@ -2775,7 +2943,7 @@ ul {
   margin-right: 0%;
 }
 @media screen and (max-width: 480px) {
-  /* line 506, ../sass/_cyklotury.scss */
+  /* line 564, ../sass/_cyklotury.scss */
   .logo-kombi {
     *zoom: 1;
     float: left;
@@ -2801,7 +2969,7 @@ ul {
     margin-right: 0%;
   }
 }
-/* line 516, ../sass/_cyklotury.scss */
+/* line 574, ../sass/_cyklotury.scss */
 .logo-kombi .header__logo {
   display: block;
   max-width: 180px;
@@ -2810,7 +2978,7 @@ ul {
   margin-bottom: 10px;
 }
 @media screen and (max-width: 480px) {
-  /* line 516, ../sass/_cyklotury.scss */
+  /* line 574, ../sass/_cyklotury.scss */
   .logo-kombi .header__logo {
     *zoom: 1;
     float: left;
@@ -2835,7 +3003,7 @@ ul {
     margin-right: 0%;
   }
 }
-/* line 527, ../sass/_cyklotury.scss */
+/* line 585, ../sass/_cyklotury.scss */
 .logo-kombi .bily-slogan {
   clear: both;
   display: block;
@@ -2844,7 +3012,7 @@ ul {
   left: 30px;
 }
 @media screen and (max-width: 480px) {
-  /* line 527, ../sass/_cyklotury.scss */
+  /* line 585, ../sass/_cyklotury.scss */
   .logo-kombi .bily-slogan {
     *zoom: 1;
     float: left;
@@ -2870,7 +3038,7 @@ ul {
   }
 }
 
-/* line 543, ../sass/_cyklotury.scss */
+/* line 601, ../sass/_cyklotury.scss */
 #navigation {
   *zoom: 1;
   width: auto;
@@ -2895,19 +3063,19 @@ ul {
 #navigation:after {
   clear: both;
 }
-/* line 550, ../sass/_cyklotury.scss */
+/* line 608, ../sass/_cyklotury.scss */
 #navigation ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-align: center;
 }
-/* line 555, ../sass/_cyklotury.scss */
+/* line 613, ../sass/_cyklotury.scss */
 #navigation ul li {
   margin: 8px;
   background: none;
 }
-/* line 558, ../sass/_cyklotury.scss */
+/* line 616, ../sass/_cyklotury.scss */
 #navigation ul li a {
   color: black;
   text-decoration: none;
@@ -2933,7 +3101,7 @@ ul {
   text-decoration: underline;
 }
 @media screen and (max-width: 480px) {
-  /* line 543, ../sass/_cyklotury.scss */
+  /* line 601, ../sass/_cyklotury.scss */
   #navigation {
     *zoom: 1;
     float: left;
@@ -2960,14 +3128,14 @@ ul {
   }
 }
 
-/* line 571, ../sass/_cyklotury.scss */
+/* line 629, ../sass/_cyklotury.scss */
 #block-menu-menu-druhe-menu {
   height: 35px;
   top: 0;
   width: 100%;
 }
 
-/* line 579, ../sass/_cyklotury.scss */
+/* line 637, ../sass/_cyklotury.scss */
 .submitted {
   font-style: italic;
   margin-top: none;
@@ -2975,7 +3143,7 @@ ul {
   font-size: 0.75em;
 }
 
-/* line 586, ../sass/_cyklotury.scss */
+/* line 644, ../sass/_cyklotury.scss */
 .form-submit {
   background-color: #4CAF50;
   /* Green */
@@ -2993,7 +3161,7 @@ ul {
   font-size: 16px;
 }
 
-/* line 602, ../sass/_cyklotury.scss */
+/* line 660, ../sass/_cyklotury.scss */
 .form-text {
   padding: 10px;
   border: solid 1px #fff;
@@ -3001,52 +3169,52 @@ ul {
   transition: box-shadow 0.3s;
 }
 
-/* line 610, ../sass/_cyklotury.scss */
+/* line 668, ../sass/_cyklotury.scss */
 .form-text:focus,
 .form-text.focus {
   box-shadow: inset 1px 1px 2px 0 #c9c9c9;
 }
 
-/* line 616, ../sass/_cyklotury.scss */
+/* line 674, ../sass/_cyklotury.scss */
 .item-list,
 .filter-help,
 .filter-guidelines {
   text-decoration: none;
   color: #bdc3c7;
 }
-/* line 619, ../sass/_cyklotury.scss */
+/* line 677, ../sass/_cyklotury.scss */
 .item-list a,
 .filter-help a,
 .filter-guidelines a {
   color: #bdc3c7;
 }
-/* line 622, ../sass/_cyklotury.scss */
+/* line 680, ../sass/_cyklotury.scss */
 .item-list a:hover,
 .filter-help a:hover,
 .filter-guidelines a:hover {
   color: #e74c3c;
 }
-/* line 625, ../sass/_cyklotury.scss */
+/* line 683, ../sass/_cyklotury.scss */
 .item-list a:focus,
 .filter-help a:focus,
 .filter-guidelines a:focus {
   color: #e74c3c;
 }
-/* line 628, ../sass/_cyklotury.scss */
+/* line 686, ../sass/_cyklotury.scss */
 .item-list ul,
 .filter-help ul,
 .filter-guidelines ul {
   list-style-type: none;
   text-align: left;
 }
-/* line 632, ../sass/_cyklotury.scss */
+/* line 690, ../sass/_cyklotury.scss */
 .item-list li,
 .filter-help li,
 .filter-guidelines li {
   margin-bottom: 10px;
 }
 
-/* line 640, ../sass/_cyklotury.scss */
+/* line 698, ../sass/_cyklotury.scss */
 mark {
   display: inline-block;
   margin: 0px;
@@ -3068,44 +3236,44 @@ mark {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 652, ../sass/_cyklotury.scss */
+/* line 710, ../sass/_cyklotury.scss */
 mark p {
   padding: 0px;
   margin: 0px;
 }
-/* line 656, ../sass/_cyklotury.scss */
+/* line 714, ../sass/_cyklotury.scss */
 mark .new {
   color: white;
   background-color: #e74c3c;
 }
-/* line 660, ../sass/_cyklotury.scss */
+/* line 718, ../sass/_cyklotury.scss */
 mark .update {
   color: white;
   background-color: black;
 }
 
-/* line 671, ../sass/_cyklotury.scss */
+/* line 729, ../sass/_cyklotury.scss */
 #block-node-recent .node-title {
   font-size: 0.9em;
   font-weight: bolder;
   text-align: left;
 }
-/* line 676, ../sass/_cyklotury.scss */
+/* line 734, ../sass/_cyklotury.scss */
 #block-node-recent .node-author {
   display: none;
 }
-/* line 679, ../sass/_cyklotury.scss */
+/* line 737, ../sass/_cyklotury.scss */
 #block-node-recent td {
   padding: 8px;
 }
 
-/* line 689, ../sass/_cyklotury.scss */
+/* line 747, ../sass/_cyklotury.scss */
 .feed-icon img {
   width: 16px;
   height: 16px;
 }
 
-/* line 699, ../sass/_cyklotury.scss */
+/* line 757, ../sass/_cyklotury.scss */
 #edit-account {
   font-family: "Roboto", sans-serif;
   margin-bottom: 10px;
@@ -3119,4 +3287,72 @@ mark .update {
   box-shadow: #bdc3c7 5px 5px 2px;
   background-color: white;
   padding: 20px;
+}
+
+/* line 770, ../sass/_cyklotury.scss */
+#forum {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: #bdc3c7 5px 5px 2px;
+  -moz-box-shadow: #bdc3c7 5px 5px 2px;
+  box-shadow: #bdc3c7 5px 5px 2px;
+  background-color: white;
+  padding: 20px;
+}
+/* line 778, ../sass/_cyklotury.scss */
+#forum table {
+  width: 100%;
+}
+/* line 782, ../sass/_cyklotury.scss */
+#forum th {
+  padding: 5px 15px 5px 15px;
+}
+/* line 787, ../sass/_cyklotury.scss */
+#forum td {
+  padding: 5px 15px 5px 15px;
+  text-align: left;
+}
+
+/* line 793, ../sass/_cyklotury.scss */
+.node-forum-form {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: #bdc3c7 5px 5px 2px;
+  -moz-box-shadow: #bdc3c7 5px 5px 2px;
+  box-shadow: #bdc3c7 5px 5px 2px;
+  background-color: white;
+  padding: 20px;
+}
+
+/* line 806, ../sass/_cyklotury.scss */
+#counter {
+  font-size: 0.8em;
+}
+/* line 808, ../sass/_cyklotury.scss */
+#counter ul {
+  padding: 1em;
+  background-color: #bdc3c7;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 812, ../sass/_cyklotury.scss */
+#counter ul ul {
+  padding: 0;
+}
+/* line 816, ../sass/_cyklotury.scss */
+#counter li {
+  list-style: none;
 }

@@ -13,7 +13,6 @@ html {
 
 body {
     font-family: $base-font-family;
-    font-kerning: 15px;
     line-height: 150%;
     background-color: $pozadi;
 	text-align: justify;
@@ -42,12 +41,19 @@ h3 {
     width: 50%;
     padding-bottom: 5px;
     border-bottom: solid 1px $grey;
+    // letter-spacing: 1px;
+    @media screen and (max-width: 480px) {
+        @include column(1/1);
+        width: 100%;
+    }
+    
     
 }
 
 h4 {
     margin-bottom: 0px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 p {
@@ -92,6 +98,17 @@ p {
         @include link-colors($black, $white, $black, $black, $black);
         @include hover-link;
     }
+    @media screen and (max-width: 480px) {
+        @include column(1/1);
+        text-align: center;
+    }
+}
+
+.action-links {
+    padding: 10px 20px 10px 25px;
+    li {
+        list-style: none;
+    }
 }
 
 ///////////////////////////////////////////////////////////////////////
@@ -108,6 +125,25 @@ p {
      @include center(1020px);
 }
 
+#content {
+    table {
+        width: 100%;
+        font-family: $base-font-family;
+        margin-bottom: 10px;
+        @include border-radius(5px);
+        @include box-shadow($stin);
+        background-color: $white;
+        padding: 20px;
+        th {
+            padding: 5px 15px 5px 15px;
+            // border-right: solid 1px $black;
+        }
+        td {
+            padding: 5px 15px 5px 15px;
+            text-align: left;
+        }
+    }
+}
 
 // HEADER
 
@@ -133,8 +169,7 @@ p {
         float: right;
         @media screen and (max-width: 480px) {
             @include column(1/1);
-            position: static;
-            margin: 15px 0px 15px 0px;
+            display: none;
         }
     }
     .bily-pruh {
@@ -145,6 +180,10 @@ p {
         height: 25px;
         bottom: 0;
         left: 0;
+        @media screen and (max-width: 480px) {
+            @include column(1/1);
+            display: none;
+        }
     }
 }
 
@@ -157,37 +196,55 @@ p {
 ///////////////////////////////
 
 .node {
-    
     img {
-        box-sizing: border-box;
         display: block;
         width: 100%;
         height: auto;
-     //   @include border-radius(5px);
-     //   border-style: solid;
-     //   border-color: $grey;
-     //   border-width: 1px;
-     //   margin-bottom: 2em;
-        
+        //   @include border-radius(5px);
+        //   border-style: solid;
+        //   border-color: $grey;
+        //   border-width: 1px;
+        //   margin-bottom: 2em;
+        @media screen and (max-width: 480px) {
+            @include column(1/1);
+            display: block;
+            width: 100% !important;
+            height: auto;
+            margin: 20px 0 20px 0;
+        }
     }
-    
     h2 {
         font-size: 2em;
     }
-    
     font-family: $base-font-family;
-
     margin-bottom: 10px;
-
     @include border-radius(5px);
     @include box-shadow($stin);
     background-color: $white;
     padding: 20px;
 }
 
+.contact-form,
+.node-form {
+    font-family: $base-font-family;
+    margin-bottom: 10px;
+    @include border-radius(5px);
+    @include box-shadow($stin);
+    background-color: $white;
+    padding: 20px;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+.form-submit {
+    margin: 5px 15px 5px 15px;
+}
+
 .node__title {
-    margin-bottom: 10px;    
-    }
+    margin-bottom: 10px;
+}
 
 .page__title {
     display: block;
@@ -459,6 +516,7 @@ a {
         .menu__item {
             margin-top: 0px;
             margin-bottom: 0px;
+            padding: 3px 8px 3px 8px;
         }
     }
     a {
@@ -705,3 +763,57 @@ mark {
     padding: 20px;
 }
 
+//////////////////////////////////////////
+// FORUM
+//////////////////////////////////////////
+
+#forum {
+    font-family: $base-font-family;
+    margin-bottom: 10px;
+    @include border-radius(5px);
+    @include box-shadow($stin);
+    background-color: $white;
+    padding: 20px;
+    
+    table {
+        width: 100%;
+    }
+    
+    th {
+        padding: 5px 15px 5px 15px;
+        // border-right: solid 1px $black;
+    }
+    
+    td {
+        padding: 5px 15px 5px 15px;
+        text-align: left;
+    }
+}
+
+.node-forum-form {
+    font-family: $base-font-family;
+    margin-bottom: 10px;
+    @include border-radius(5px);
+    @include box-shadow($stin);
+    background-color: $white;
+    padding: 20px;
+}
+
+///////////////////////////////////////////////
+// COUNTER
+///////////////////////////////////////////////
+
+#counter {
+    font-size: 0.8em;
+    ul {
+        padding: 1em;
+        background-color: $grey;
+        @include border-radius(5px);
+        ul {
+            padding: 0;
+        }
+    }
+    li {
+        list-style: none;
+    }
+}
