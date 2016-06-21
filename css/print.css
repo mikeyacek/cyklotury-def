@@ -74,7 +74,7 @@
   .forum-topic-navigation,
   .pager,
   .feed-icons {
-    visibility: hidden;
-    display: none;
+      visibility: hidden;
+      display: none;
   }
 }

@@ -38,7 +38,7 @@ h6 {
 
 h3 {
     display: block;
-    width: 50%;
+    width: 65%;
     padding-bottom: 5px;
     border-bottom: solid 1px $grey;
     // letter-spacing: 1px;
@@ -72,21 +72,28 @@ p {
     display: none;
 }
 
-.pager {
-    background-color: $white;
-    @include border-radius(5px);
-    color: $black;
+.item-list {
+    ul {
+        display: block;
+        background-color: $white;
+        color: $black;
+        text-align: center;
+        a {
+            @include link-colors($black, $white, $black, $black, $black);
+            @include hover-link;
+        }
+    }
 }
 
 .links {
     clear: both;
     font-size: .8em;
     display: block;
-    margin-top: 10px;
+    margin-top: 2em;
     margin-bottom: 0px;
     text-align: right;
     padding: 3px;
-    @include border-radius(5px);
+    @include border-bottom-radius(5px);
     background-color: $grey;
     color: $white;
     //    position: absolute;
@@ -133,7 +140,7 @@ p {
         @include border-radius(5px);
         @include box-shadow($stin);
         background-color: $white;
-        padding: 20px;
+        padding: 3em;
         th {
             padding: 5px 15px 5px 15px;
             // border-right: solid 1px $black;
@@ -413,20 +420,43 @@ figcaption {
     }
 }
 
-.comment-by-node-author {
-    margin-top: 20px;
-    margin-bottom: 20px;
+.comment {
+    margin-top: 2em;
+    margin-bottom: 2em;
     border-top: 1px dotted $black;
     border-bottom: 1px dotted $black;
     padding: 15px;
-    background-color: #e2d8ff;
+    background-color: $white;
     .comment-title {
-        color: $white;
-        background-color: $black;
-        padding: 7px;
-        @include border-radius(5px);
+        color: $black;
+        background-color: none;
+        padding: 2px;
+        margin-bottom: 1em;
+        //  @include border-radius(5px);
         a {
-            @include link-colors($white, $red, $red, $white, $red);
+            @include link-colors($black, $red, $red, $black, $red);
+            @include hover-link;
+            text-align: left;
+            font-weight: bold;
+        }
+    }
+}
+
+.comment-by-node-author {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-top: 1px dotted $black;
+    border-bottom: 1px dotted $black;
+    padding: 15px;
+    background-color: $cloud;
+    .comment-title {
+        color: $black;
+        background-color: none;
+        padding: 2px;
+        margin-bottom: 1em;
+        //  @include border-radius(5px);
+        a {
+            @include link-colors($black, $red, $red, $black, $red);
             @include hover-link;
             text-align: left;
             font-weight: bold;
@@ -435,19 +465,20 @@ figcaption {
 }
 
 .comment-by-viewer {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 2em;
+    margin-bottom: 2em;
     border-top: 1px dotted $black;
     border-bottom: 1px dotted $black;
     padding: 15px;
     background-color: #e2d8ff;
     .comment-title {
-        color: $white;
-        background-color: $black;
-        padding: 7px;
-        @include border-radius(5px);
+        color: $black;
+        background-color: none;
+        padding: 2px;
+        margin-bottom: 1em;
+        // @include border-radius(5px);
         a {
-            @include link-colors($white, $red, $red, $grey, $red);
+            @include link-colors($black, $red, $red, $black, $red);
             @include hover-link;
             text-align: left;
             font-weight: bold;
@@ -573,7 +604,7 @@ ul {
     }
     .header__logo {
         display: block;
-        max-width: 180px;
+        max-width: 50%;
         top: 30px;
         left: 30px;
         margin-bottom: 10px;
@@ -584,6 +615,7 @@ ul {
     }
     .bily-slogan {
         clear: both;
+        font-size: 1.1em;
         display: block;
         color: $white;
         top: 90px;
@@ -705,8 +737,8 @@ mark {
     background-color: $red;
     font-weight: bolder;
     font-size: 0.75em;
-    @include rotate(-3deg);
-    @include border-radius(3px);
+    @include rotate(-2deg);
+    @include border-radius(2px);
     p {
         padding: 0px;
         margin: 0px;
@@ -815,5 +847,46 @@ mark {
     }
     li {
         list-style: none;
+    }
+}
+
+///////////////////////////////////////////////
+// TAXONOMY
+///////////////////////////////////////////////
+
+.field-type-taxonomy-term-reference {
+    font-size: 0.8em;
+    color: $white;
+    display: inline-block;
+    background-color: $black;
+    padding: 3px;
+    margin-top: 2em;
+    margin-right: 1em;
+    a {
+        @include link-colors($white, $red, $red, $white, $red);
+        @include hover-link;
+        text-align: left;
+    }
+}
+
+/////////////////////////////////////////////////
+// FOOTER
+/////////////////////////////////////////////////
+
+#footer {
+    display: block;
+    background-color: $black;
+    color: $white;
+    font-size: 0.8em;
+    padding: 1em;
+    margin-top: 2em;
+    p {
+        text-align: center;
+        margin: 0;
+        a {
+            @include link-colors($white, $red, $red, $white, $red);
+            @include hover-link;
+            text-align: left;
+        }
     }
 }
