@@ -3327,13 +3327,36 @@ mark .update {
   padding: 8px;
 }
 
+/* line 774, ../sass/_cyklotury.scss */
+#block-blog-recent {
+  background-color: #bdc3c7;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 1em;
+}
 /* line 779, ../sass/_cyklotury.scss */
+#block-blog-recent .node-author {
+  display: none;
+}
+/* line 782, ../sass/_cyklotury.scss */
+#block-blog-recent li {
+  background-color: #bdc3c7;
+  padding: 8px;
+  font-size: 0.9em;
+  font-weight: bolder;
+  text-align: left;
+}
+
+/* line 798, ../sass/_cyklotury.scss */
 .feed-icon img {
   width: 16px;
   height: 16px;
 }
 
-/* line 789, ../sass/_cyklotury.scss */
+/* line 808, ../sass/_cyklotury.scss */
 #edit-account {
   font-family: "Roboto", sans-serif;
   margin-bottom: 10px;
@@ -3349,7 +3372,7 @@ mark .update {
   padding: 20px;
 }
 
-/* line 802, ../sass/_cyklotury.scss */
+/* line 821, ../sass/_cyklotury.scss */
 #forum {
   font-family: "Roboto", sans-serif;
   margin-bottom: 10px;
@@ -3364,21 +3387,21 @@ mark .update {
   background-color: white;
   padding: 20px;
 }
-/* line 810, ../sass/_cyklotury.scss */
+/* line 829, ../sass/_cyklotury.scss */
 #forum table {
   width: 100%;
 }
-/* line 814, ../sass/_cyklotury.scss */
+/* line 833, ../sass/_cyklotury.scss */
 #forum th {
   padding: 5px 15px 5px 15px;
 }
-/* line 819, ../sass/_cyklotury.scss */
+/* line 838, ../sass/_cyklotury.scss */
 #forum td {
   padding: 5px 15px 5px 15px;
   text-align: left;
 }
 
-/* line 825, ../sass/_cyklotury.scss */
+/* line 844, ../sass/_cyklotury.scss */
 .node-forum-form {
   font-family: "Roboto", sans-serif;
   margin-bottom: 10px;
@@ -3394,11 +3417,11 @@ mark .update {
   padding: 20px;
 }
 
-/* line 838, ../sass/_cyklotury.scss */
+/* line 857, ../sass/_cyklotury.scss */
 #counter {
   font-size: 0.8em;
 }
-/* line 840, ../sass/_cyklotury.scss */
+/* line 859, ../sass/_cyklotury.scss */
 #counter ul {
   padding: 1em;
   background-color: #bdc3c7;
@@ -3408,16 +3431,16 @@ mark .update {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 844, ../sass/_cyklotury.scss */
+/* line 863, ../sass/_cyklotury.scss */
 #counter ul ul {
   padding: 0;
 }
-/* line 848, ../sass/_cyklotury.scss */
+/* line 867, ../sass/_cyklotury.scss */
 #counter li {
   list-style: none;
 }
 
-/* line 857, ../sass/_cyklotury.scss */
+/* line 876, ../sass/_cyklotury.scss */
 .field-type-taxonomy-term-reference {
   font-size: 0.8em;
   color: white;
@@ -3427,7 +3450,7 @@ mark .update {
   margin-top: 2em;
   margin-right: 1em;
 }
-/* line 865, ../sass/_cyklotury.scss */
+/* line 884, ../sass/_cyklotury.scss */
 .field-type-taxonomy-term-reference a {
   color: white;
   text-decoration: none;
@@ -3454,7 +3477,7 @@ mark .update {
   text-decoration: underline;
 }
 
-/* line 876, ../sass/_cyklotury.scss */
+/* line 895, ../sass/_cyklotury.scss */
 #footer {
   display: block;
   background-color: black;
@@ -3463,12 +3486,12 @@ mark .update {
   padding: 1em;
   margin-top: 2em;
 }
-/* line 883, ../sass/_cyklotury.scss */
+/* line 902, ../sass/_cyklotury.scss */
 #footer p {
   text-align: center;
   margin: 0;
 }
-/* line 886, ../sass/_cyklotury.scss */
+/* line 905, ../sass/_cyklotury.scss */
 #footer p a {
   color: white;
   text-decoration: none;

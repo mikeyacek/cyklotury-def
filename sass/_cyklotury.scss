@@ -771,6 +771,25 @@ mark {
     }
 }
 
+#block-blog-recent {
+    background-color: $grey;
+    @include border-radius(5px);
+    padding: 1em;
+    .node-title {}
+    .node-author {
+        display: none;
+    }
+    li {
+        background-color: $grey;
+        padding: 8px;
+        font-size: 0.9em;
+        font-weight: bolder;
+        text-align: left;
+    }
+}
+
+
+
 ////////////////////////////////////////
 // RSS
 ////////////////////////////////////////

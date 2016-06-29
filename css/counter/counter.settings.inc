@@ -90,22 +90,22 @@ function counter_admin_settings() {
   );
   $form['counter_statistic']['counter_statistic_today'] = array(
     '#type' => 'checkbox',
-    '#title' => t('Visitors Today'),
+    '#title' => t('Návštěvy dnes'),
     '#default_value' => variable_get('counter_statistic_today', 1),
   );
   $form['counter_statistic']['counter_statistic_week'] = array(
     '#type' => 'checkbox',
-    '#title' => t('Visitors This Week'),
+    '#title' => t('Návštěvy tento týden'),
     '#default_value' => variable_get('counter_statistic_week', 1),
   );
   $form['counter_statistic']['counter_statistic_month'] = array(
     '#type' => 'checkbox',
-    '#title' => t('Visitors This Month'),
+    '#title' => t('Návštěvy tento měsíc'),
     '#default_value' => variable_get('counter_statistic_month', 1),
   );
   $form['counter_statistic']['counter_statistic_year'] = array(
     '#type' => 'checkbox',
-    '#title' => t('Visitors This Year'),
+    '#title' => t('Návštěvy tento rok'),
     '#default_value' => variable_get('counter_statistic_year', 1),
   );
 
